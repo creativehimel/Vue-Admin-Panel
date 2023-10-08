@@ -1,0 +1,48 @@
+<script setup>
+import SideTopNavbar from './SideTopNavbar.vue'
+import SideBottomNavbar from './SideBottomNavbar.vue'
+</script>
+<template>
+  <div class="bg-neutral-900 w-60 p-3 flex flex-col">
+    <div class="flex items-center gap-2 px-1 py-3">
+      <svg
+        class="text-[24px] text-neutral-100"
+        stroke="currentColor"
+        fill="currentColor"
+        stroke-width="0"
+        version="1"
+        viewBox="0 0 48 48"
+        enable-background="new 0 0 48 48"
+        height="1em"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g fill="currentColor">
+          <rect x="37" y="18" width="6" height="24"></rect>
+          <rect x="29" y="26" width="6" height="16"></rect>
+          <rect x="21" y="22" width="6" height="20"></rect>
+          <rect x="13" y="32" width="6" height="10"></rect>
+          <rect x="5" y="28" width="6" height="14"></rect>
+        </g>
+        <g fill="currentColor">
+          <circle cx="8" cy="16" r="3"></circle>
+          <circle cx="16" cy="18" r="3"></circle>
+          <circle cx="24" cy="11" r="3"></circle>
+          <circle cx="32" cy="13" r="3"></circle>
+          <circle cx="40" cy="9" r="3"></circle>
+          <polygon
+            points="39.1,7.2 31.8,10.9 23.5,8.8 15.5,15.8 8.5,14.1 7.5,17.9 16.5,20.2 24.5,13.2 32.2,15.1 40.9,10.8"
+          ></polygon>
+        </g>
+      </svg>
+      <span class="text-neutral-100 text-lg">OpenShop</span>
+    </div>
+    <div class="flex-1">
+      <SideTopNavbar />
+    </div>
+    <div class="flex flex-col gap-0.5 py-2 border-t border-neutral-700">
+      <SideBottomNavbar />
+    </div>
+  </div>
+</template>
+<style scoped></style>
